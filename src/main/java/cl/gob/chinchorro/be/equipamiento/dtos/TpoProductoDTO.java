@@ -1,6 +1,7 @@
 package cl.gob.chinchorro.be.equipamiento.dtos;
 
 import java.io.Serializable;
+import javax.validation.constraints.NotNull;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,6 +22,7 @@ public class TpoProductoDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     protected Long id;
+    @NotNull
     protected String name;
     protected String fchCreacion;
     protected String fchModificacion;
